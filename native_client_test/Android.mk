@@ -12,31 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := \
-	SHT20Service.cpp \
-	SHT20Client.cpp
+LOCAL_SRC_FILES:= SHT20_client_test.cpp
 
-LOCAL_C_INCLUDES += \
-        frameworks/base/include \
-        device/samsung/smdkv210/libsht20/include
-
-LOCAL_MODULE := libsht20service
-
-LOCAL_SHARED_LIBRARIES += \
-	libutils \
-	libbinder \
-	libcutils \
-	libhardware
+LOCAL_SHARED_LIBRARIES:= \
+		 libutils \
+		 libbinder \
+		 libsht20service
 
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_PRELINK_MODULE := false
+OCAL_PRELINK_MODULE := false
 
-include $(BUILD_SHARED_LIBRARY)
+LOCAL_MODULE:= sht20_test
 
+include $(BUILD_EXECUTABLE)
