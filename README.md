@@ -1,4 +1,3 @@
-
 CYESS Co., Ltd  howard.lin@cyess.com
 
 2013/04/21
@@ -6,4 +5,4 @@ CYESS Co., Ltd  howard.lin@cyess.com
 	
 		* S5PV210 development board
 		* Use SHT20  I2C humidity sensor
-		* Create by Howard Lin
+		* Created by Howard Lin
