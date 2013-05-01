@@ -1,5 +1,5 @@
 CYESS Co., Ltd  howard.lin@cyess.com
-
+www.cyess.com
 2013/04/21
 	Android native service sample code
 	
